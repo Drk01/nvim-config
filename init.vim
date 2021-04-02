@@ -250,7 +250,8 @@ let g:coc_global_extensions = [
             \'coc-html',
             \'coc-json',
             \'coc-html-css-support',
-            \'coc-prettier']
+            \'coc-prettier',
+            \'coc-tsserver']
 
 "NERDTree config
 nnoremap <leader>n :NERDTreeFocus<CR>
