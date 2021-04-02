@@ -92,6 +92,8 @@ nnoremap <leader>df :vertical Gdiffsplit<CR>
 nnoremap <leader>gp :G push<CR>
 nnoremap <Tab> :tabn<CR>
 nnoremap <S-Tab> :tabprevious<CR>
+nnoremap <leader>t :split term://zsh<CR>
+tnoremap <leader>t clear<Enter>exit<Enter><CR>
 
 "Theme config
 colorscheme gruvbox
