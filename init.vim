@@ -75,6 +75,8 @@ Plug 'vim-scripts/restore_view.vim'
 Plug 'mhinz/vim-startify'
 "Smoothie
 Plug 'psliwka/vim-smoothie'
+"Gitgutter
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 "Custom remaps
