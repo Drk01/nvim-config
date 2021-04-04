@@ -273,7 +273,7 @@ nnoremap <leader><C-p> :Buffers<CR>
 "FZF config
 
 "Autoclose tag
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.tsx'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.tsx,*.js'
 let g:closetag_close_shortcut = '<leader>>'
 let g:closetag_shortcut = '>'
 
@@ -302,10 +302,3 @@ let g:lightline = {
 set viewoptions=cursor,folds,slash,unix
 set foldmethod=indent
 " let g:skipview_files = ['*\.vim']
-
-" Vim devicons
-"autocmd FileType nerdtree setlocal nolist
-"let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
-"let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''  
-"set ambiwidth=double
-"
