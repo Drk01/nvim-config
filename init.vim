@@ -14,7 +14,6 @@ set nobackup
 set undodir=~/.nvim/undodir
 set undofile
 set incsearch
-set termguicolors
 set scrolloff=15
 set noshowmode
 set completeopt=menuone,noinsert,noselect
@@ -66,7 +65,7 @@ Plug 'bogado/file-line'
 "Git messenger
 Plug 'rhysd/git-messenger.vim'
 "Gruvbox theme
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
 "Vim.sorround
 Plug 'tpope/vim-surround'
 "Restore folding
@@ -77,6 +76,8 @@ Plug 'mhinz/vim-startify'
 Plug 'psliwka/vim-smoothie'
 "Gitgutter
 Plug 'airblade/vim-gitgutter'
+"One Colors
+Plug 'kirbycool/one-colors.vim'
 call plug#end()
 
 "Custom remaps
@@ -94,9 +95,12 @@ nnoremap <Tab> :tabn<CR>
 nnoremap <S-Tab> :tabprevious<CR>
 nnoremap <leader>t :split term://zsh<CR>
 tnoremap <leader>t clear<Enter>exit<Enter><CR>
+nnoremap k kzz
+nnoremap j jzz
 
 "Theme config
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme onedark
 "EndTheme config 
 
 "COC configuration
@@ -302,3 +306,7 @@ let g:lightline = {
 set viewoptions=cursor,folds,slash,unix
 set foldmethod=indent
 " let g:skipview_files = ['*\.vim']
+        if has('termguicolors')
+          set termguicolors
+        endif
+
