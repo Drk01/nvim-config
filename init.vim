@@ -259,7 +259,8 @@ let g:coc_global_extensions = [
             \'coc-json',
             \'coc-html-css-support',
             \'coc-prettier',
-            \'coc-tsserver']
+            \'coc-tsserver',
+            \'coc-docker']
 
 "NERDTree config
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -306,7 +307,6 @@ let g:lightline = {
 set viewoptions=cursor,folds,slash,unix
 set foldmethod=indent
 " let g:skipview_files = ['*\.vim']
-        if has('termguicolors')
-          set termguicolors
-        endif
-
+if has('termguicolors')
+  set termguicolors
+endif
