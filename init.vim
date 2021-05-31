@@ -97,6 +97,7 @@ nnoremap <leader>t :split term://zsh<CR>
 tnoremap <leader>t clear<Enter>exit<Enter><CR>
 nnoremap k kzz
 nnoremap j jzz
+inoremap <silent> <Tab> <c-o>:call search('}\\|)\\|]\\|>', 'cW')<cr><Right>
 
 "Theme config
 "colorscheme gruvbox
@@ -113,14 +114,14 @@ else
   set signcolumn=yes
 endif
 
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
+ "Use tab for trigger completion with characters ahead and navigate.
+ "NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+ "other plugin before putting this into your config.
+inoremap <silent><expr> J
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr>K pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -283,7 +284,7 @@ let g:closetag_close_shortcut = '<leader>>'
 let g:closetag_shortcut = '>'
 
 "NERDTree config
-let g:NERDTreeIgnore = ['^node_modules$']
+let g:NERDTreeIgnore = ['^node_modules$','^database$']
 
 "NERD commenter 
 vmap ++ <plug>NERDCommenterToggle
