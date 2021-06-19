@@ -262,7 +262,9 @@ let g:coc_global_extensions = [
             \'coc-html-css-support',
             \'coc-prettier',
             \'coc-tsserver',
-            \'coc-docker']
+            \'coc-docker',
+            \'coc-kite', 
+            \'coc-graphql']
 
 "NERDTree config
 nnoremap <leader>n :NERDTreeFocus<CR>
