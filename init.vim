@@ -287,7 +287,7 @@ let g:closetag_close_shortcut = '<leader>>'
 let g:closetag_shortcut = '>'
 
 "NERDTree config
-let g:NERDTreeIgnore = ['^node_modules$','^database$']
+let g:NERDTreeIgnore = ['^node_modules$','^database$', '^database-testing$', '^database-test$']
 
 "NERD commenter 
 vmap ++ <plug>NERDCommenterToggle
