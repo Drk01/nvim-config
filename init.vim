@@ -97,7 +97,8 @@ nnoremap <leader>t :split term://zsh<CR>
 tnoremap <leader>t clear<Enter>exit<Enter><CR>
 nnoremap k kzz
 nnoremap j jzz
-inoremap <silent> <Tab> <c-o>:call search('}\\|)\\|]\\|>', 'cW')<cr><Right>
+"inoremap <silent> <Tab> <c-o>:call search('}\\|)\\|]\\|>', 'cW')<cr><Right>
+inoremap <silent> <Tab> <c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>
 
 "Theme config
 "colorscheme gruvbox
