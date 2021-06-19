@@ -85,7 +85,7 @@ inoremap jj <Esc>
 "EndCustom remaps
 
 "Mapping leader
-let mapleader = " " 
+let mapleader = "ñ" 
 "EndMapping leader
 
 nnoremap , :Git<CR>
