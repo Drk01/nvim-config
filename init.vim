@@ -7,14 +7,14 @@ set nu
 set relativenumber
 set hidden
 set noerrorbells
-set nowrap 
+set nowrap
 set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.nvim/undodir
 set undofile
 set incsearch
-set scrolloff=15
+"set scrolloff=15
 set noshowmode
 set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
@@ -26,7 +26,7 @@ set colorcolumn=80
 set laststatus=2
 set maxmempattern=2000000
 
-"Plugins 
+"Plugins
 call plug#begin(stdpath('data').'/plugged')
 
 "FZF
@@ -85,7 +85,7 @@ inoremap jj <Esc>
 "EndCustom remaps
 
 "Mapping leader
-let mapleader = "ñ" 
+let mapleader = "ñ"
 "EndMapping leader
 
 nnoremap , :Git<CR>
@@ -103,7 +103,7 @@ inoremap <silent> <Tab> <c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>
 "Theme config
 "colorscheme gruvbox
 colorscheme onedark
-"EndTheme config 
+"EndTheme config
 
 "COC configuration
 " Always show the signcolumn, otherwise it would shift the text each time
@@ -251,7 +251,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-"COC extensions 
+"COC extensions
 let g:coc_global_extensions = [
             \'coc-css',
             \'coc-pairs',
@@ -263,16 +263,16 @@ let g:coc_global_extensions = [
             \'coc-prettier',
             \'coc-tsserver',
             \'coc-docker',
-            \'coc-kite', 
+            \'coc-tabnine',
             \'coc-graphql']
 
 "NERDTree config
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap ; :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-"EndNERDTree config 
+"EndNERDTree config
 
-"Rainbows 
+"Rainbows
 let g:rainbow_active = 1
 "End Rainbows
 
@@ -289,7 +289,7 @@ let g:closetag_shortcut = '>'
 "NERDTree config
 let g:NERDTreeIgnore = ['^node_modules$','^database$', '^database-testing$', '^database-test$']
 
-"NERD commenter 
+"NERD commenter
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
@@ -304,7 +304,7 @@ let g:lightline = {
       \'gitbranch' : 'FugitiveHead'
       \},
       \}
-"Coc-pairs 
+"Coc-pairs
  inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "Fold.vim
