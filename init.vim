@@ -267,7 +267,7 @@ let g:rainbow_active = 1
 "End Rainbows
 
 "FZF config
-nnoremap <C-p> :GFiles<CR>
+nnoremap <C-p> :Files<CR>
 nnoremap <leader><C-p> :Buffers<CR>
 "FZF config
 
