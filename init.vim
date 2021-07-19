@@ -37,11 +37,6 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Vim Fugitive
 Plug 'https://github.com/tpope/vim-fugitive'
-"NERDTree
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "Vim matchit
 Plug 'https://github.com/adelarsq/vim-matchit'
 " Lightline
@@ -264,13 +259,8 @@ let g:coc_global_extensions = [
             \'coc-tsserver',
             \'coc-docker',
             \'coc-tabnine',
-            \'coc-graphql']
-
-"NERDTree config
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap ; :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-"EndNERDTree config
+            \'coc-graphql',
+            \'coc-explorer']
 
 "Rainbows
 let g:rainbow_active = 1
@@ -286,8 +276,8 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.tsx,*.js'
 let g:closetag_close_shortcut = '<leader>>'
 let g:closetag_shortcut = '>'
 
-"NERDTree config
-let g:NERDTreeIgnore = ['^node_modules$','^database$', '^database-testing$', '^database-test$']
+"Explorer
+nnoremap ; :CocCommand explorer<CR>
 
 "NERD commenter
 vmap ++ <plug>NERDCommenterToggle
