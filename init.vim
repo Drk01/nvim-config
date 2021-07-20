@@ -85,12 +85,16 @@ nnoremap <leader>df :vertical Gdiffsplit<CR>
 nnoremap <leader>gp :G push<CR>
 nnoremap <Tab> :tabn<CR>
 nnoremap <S-Tab> :tabprevious<CR>
-nnoremap <leader>t :split term://zsh<CR>
-tnoremap <leader>t clear<Enter>exit<Enter><CR>
 nnoremap k kzz
 nnoremap j jzz
 "inoremap <silent> <Tab> <c-o>:call search('}\\|)\\|]\\|>', 'cW')<cr><Right>
 inoremap <silent> <Tab> <c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>
+
+"Terminal maps
+if has('nvim')
+  nnoremap <leader>t :split term://bash<CR>
+  tnoremap <Esc> <C-\><C-n>
+endif
 
 "Theme config
 "colorscheme gruvbox
