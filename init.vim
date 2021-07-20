@@ -14,7 +14,6 @@ set nobackup
 set undodir=~/.nvim/undodir
 set undofile
 set incsearch
-"set scrolloff=15
 set noshowmode
 set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
