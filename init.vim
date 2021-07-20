@@ -58,8 +58,6 @@ Plug 'ap/vim-css-color'
 Plug 'bogado/file-line'
 "Git messenger
 Plug 'rhysd/git-messenger.vim'
-"Gruvbox theme
-"Plug 'morhetz/gruvbox'
 "Vim.sorround
 Plug 'tpope/vim-surround'
 "Restore folding
@@ -214,7 +212,7 @@ nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
+command! -nargs=0 FO :call CocAction('format')
 
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
