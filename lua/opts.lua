@@ -6,7 +6,7 @@ vim.o.expandtab=true
 vim.o.exrc=true
 vim.o.hidden=true
 vim.o.smartcase=true                                                              
-vim.o.undodir='./undodir'       
+vim.o.undodir='~/.config/nvim/undodir'       
 vim.o.undofile=true                                                 
 vim.o.incsearch=true                          
 vim.o.completeopt='menuone,noselect'
@@ -21,6 +21,8 @@ vim.o.viewoptions='cursor,folds,slash,unix'
 vim.o.foldmethod='indent'
 vim.g.foldmethod='indent'
 vim.o.termguicolors=true
+
+vim.o.compe.source.tabnine = "v:true"
 
 -- vim.o.nohlsearch=true                        
 -- vim.o.noerrorbells

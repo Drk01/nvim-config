@@ -109,5 +109,11 @@ map('v','<Leader>ñ', ":Neoformat<CR>", opt)
 -- Terminal
 map('n','<Leader>t', ':split term://bash<CR>',opt)
 
--- Treesitter
--- map("n",";",":Tr")
+-- NvimTree
+map("n",";",":NvimTreeToggle<CR>",opt)
+
+-- Nvim-compe
+-- inoremap <silent><expr> <C-Space> compe#complete()
+-- map('n','<C-Space>', 'compe#complete()', opts)
+-- vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm({ 'keys': '<CR>', 'select': v:true })", { expr = true })
+map('i', '<CR>', 'compe#confirm({"keys": "<CR>", "select": v:true })', {expr = true})
