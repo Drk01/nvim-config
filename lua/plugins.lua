@@ -26,8 +26,6 @@ use {
 use 'https://github.com/tpope/vim-fugitive'
 --  Lightline
 use 'itchyny/lightline.vim'
--- Vim-Polyglot
-use 'sheerun/vim-polyglot'
 -- Autoclose tag
 use 'alvan/vim-closetag'
 -- Tmux-Vim
@@ -38,8 +36,6 @@ use 'jbgutierrez/vim-better-comments'
 use "terrortylor/nvim-comment"
 -- Vim colors
 use 'ap/vim-css-color'
--- File line
-use 'bogado/file-line'
 -- Vim.sorround
 use 'tpope/vim-surround'
 -- Restore folding
@@ -161,10 +157,7 @@ use {
         require("modules.others").blankline()
     end
 }
-
 -- Tabnine
 use {'tzachar/compe-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-compe'}
-  
-
 end)
 
