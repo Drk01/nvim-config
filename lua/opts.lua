@@ -22,11 +22,15 @@ vim.o.foldmethod='indent'
 vim.g.foldmethod='indent'
 vim.o.termguicolors=true
 
-vim.o.compe.source.tabnine = "v:true"
-
--- vim.o.nohlsearch=true                        
--- vim.o.noerrorbells
--- vim.o.nowrap=                 
--- vim.o.noswapfile
--- vim.o.nobackup=true                                                  
--- vim.o.noshowmode=true                                                  
+vim.o.nohlsearch=true                        
+vim.g.nohlsearch=true                        
+vim.o.noerrorbells=true
+vim.g.noerrorbells=true
+vim.o.nowrap=true                 
+vim.g.nowrap=true                 
+vim.o.noswapfile=true
+vim.g.noswapfile=true
+vim.o.nobackup=true                                                  
+vim.g.nobackup=true
+vim.o.noshowmode=true                                                  
+vim.g.noshowmode=true                                                  
