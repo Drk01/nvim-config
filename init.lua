@@ -20,5 +20,8 @@ vim.g.closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.tsx,*.js'
 vim.g.closetag_close_shortcut = '<leader>>'
 vim.g.closetag_shortcut = '>'
 
+-- Format on save
+vim.api.nvim_command("au BufWrite * :Neoformat")
+
 require 'plugins'
 require 'opts'
