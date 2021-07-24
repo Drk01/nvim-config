@@ -125,29 +125,6 @@ use {
     event = "CursorMoved"
 }
 
--- load autosave only if its globally enabled
-use {
-    "Pocco81/AutoSave.nvim",
-    config = function()
-        require "modules.autosave"
-    end,
-    cond = function()
-        return vim.g.auto_save == true
-    end
-}
-
-use {
-    "Pocco81/TrueZen.nvim",
-    cmd = {
-        "TZAtaraxis",
-        "TZMinimalist",
-        "TZFocus"
-    },
-    config = function()
-        require "modules.zenmode"
-    end
-}
-
 --   use "alvan/vim-closetag" -- for html autoclosing tag
 
 use {
