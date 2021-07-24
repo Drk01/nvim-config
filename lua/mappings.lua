@@ -92,7 +92,7 @@ map('n', '<Leader>df', ':vertical Gdiffsplit<CR>', opt)
 map('n', '<Leader>gp', ':G push<CR>', opt)
 
 -- Tabs switch
-map("n", "<Tab>", ":tabNext<CR>", opt)
+map("n", "<Tab>", ":tabn<CR>", opt)
 map("n", "<S-Tab>", ":tabprevious<CR>", opt)
 
 -- Navigation
