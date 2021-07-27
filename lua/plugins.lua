@@ -112,13 +112,7 @@ use {
 }
 
 -- misc modules
-use {
-    "windwp/nvim-autopairs",
-    after = "nvim-compe",
-    config = function()
-        require "modules.autopairs"
-    end
-}
+use "jiangmiao/auto-pairs"
 
 use {
     "andymass/vim-matchup",
