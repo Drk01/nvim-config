@@ -48,7 +48,7 @@ use 'psliwka/vim-smoothie'
 use 'joshdick/onedark.vim'
 -- Formatter
 use 'sbdchd/neoformat'
--- Treesitter 
+-- Treesitter
 use {
     'nvim-treesitter/nvim-treesitter',
     event = 'BufRead',
@@ -66,8 +66,7 @@ use {
    end
 }
 
-use {
-  "kabouzeid/nvim-lspinstall",
+use { "kabouzeid/nvim-lspinstall",
   event = "BufRead"
 }
 
@@ -128,7 +127,4 @@ use {
         require("modules.others").blankline()
     end
 }
--- Tabnine
-use {'tzachar/compe-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-compe'}
 end)
-

@@ -21,6 +21,5 @@ compe.setup {
         luasnip = {kind = "﬌", true},
         nvim_lsp = true,
         nvim_lua = true,
-        tabnine = {kind = "TN", true}
     }
 }
