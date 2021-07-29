@@ -1,4 +1,4 @@
-require 'mappings'
+require 'plugins'
 
 -- Colorscheme
 vim.o.termguicolors = true
@@ -23,5 +23,5 @@ vim.g.closetag_shortcut = '>'
 -- Format on save
 vim.api.nvim_command("au BufWrite * :Neoformat")
 
-require 'plugins'
+require 'mappings'
 require 'opts'
