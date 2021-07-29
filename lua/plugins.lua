@@ -124,4 +124,13 @@ use {
         require("modules.others").blankline()
     end
 }
+
+-- auto-pairs
+use {
+    "windwp/nvim-autopairs",
+    after = "nvim-compe",
+    config = function()
+        require "modules.autopairs"
+    end
+}
 end)
