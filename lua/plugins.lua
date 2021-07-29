@@ -110,9 +110,6 @@ use {
     }
 }
 
--- misc modules
-use "jiangmiao/auto-pairs"
-
 use {
     "andymass/vim-matchup",
     event = "CursorMoved"
