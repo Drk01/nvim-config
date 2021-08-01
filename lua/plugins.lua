@@ -133,4 +133,11 @@ use {
         require "modules.autopairs"
     end
 }
+-- Lsp signature
+use {
+  "ray-x/lsp_signature.nvim",
+  config = function ()
+      require "lsp_signature".setup()
+  end
+}
 end)
