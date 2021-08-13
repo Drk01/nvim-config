@@ -5,11 +5,10 @@ if not (present1 or present2) then
     return
 end
 
-autopairs.setup()
-autopairs_completion.setup(
-    {
-        map_cr = true,
-        map_complete = true -- insert () func completion
-    }
-)
+autopairs.setup{}
 
+require("nvim-autopairs.completion.compe").setup({
+  map_cr = true, --  map <CR> on insert mode
+  map_complete = true, -- it will auto insert `(` after select function or method item
+  auto_select = true,  -- auto select first item
+})
