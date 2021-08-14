@@ -37,8 +37,11 @@ return require('packer').startup(function()
     use 'tpope/vim-surround'
     -- Restore folding
     use 'vim-scripts/restore_view.vim'
-    -- Smoothie
-    use 'psliwka/vim-smoothie'
+    -- neoscroll
+    use {
+        'karb94/neoscroll.nvim',
+        config = function() require "others.neoscroll" end
+    }
     -- One Dark
     use 'joshdick/onedark.vim'
     -- Formatter
