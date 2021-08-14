@@ -38,8 +38,6 @@ return require('packer').startup(function()
     use 'tpope/vim-surround'
     -- Restore folding
     use 'vim-scripts/restore_view.vim'
-    -- Startify
-    use 'mhinz/vim-startify'
     -- Smoothie
     use 'psliwka/vim-smoothie'
     -- One Dark
