@@ -29,8 +29,10 @@ return require('packer').startup(function()
     -- Better comments
     use 'jbgutierrez/vim-better-comments'
     -- nvim-commment
-    use "terrortylor/nvim-comment"
-    require('nvim_comment').setup()
+    use {
+        'terrortylor/nvim-comment',
+        config = function() require "others.comment" end
+    }
     -- Vim colors
     use 'ap/vim-css-color'
     -- Vim.sorround
