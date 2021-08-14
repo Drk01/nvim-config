@@ -87,6 +87,7 @@ map("i", "<Tab>", "<c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>", opt)
 map("n", ",", ":Git<CR>", opt)
 map('n', '<Leader>df', ':vertical Gdiffsplit<CR>', opt)
 map('n', '<Leader>gp', ':G push<CR>', opt)
+map('v', '<Leader>sh', ':Gitsigns stage_hunk<CR>', opt)
 
 -- Tabs switch
 map("n", "<Tab>", ":tabn<CR>", opt)
