@@ -24,8 +24,6 @@ return require('packer').startup(function()
     use 'https://github.com/tpope/vim-fugitive'
     --  Lightline
     use 'itchyny/lightline.vim'
-    -- Autoclose tag
-    use 'alvan/vim-closetag'
     -- Tmux-Vim
     use 'christoomey/vim-tmux-navigator'
     -- Better comments
