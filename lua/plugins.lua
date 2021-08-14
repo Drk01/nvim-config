@@ -88,8 +88,6 @@ return require('packer').startup(function()
 
     use {"andymass/vim-matchup", event = "CursorMoved"}
 
-    --   use "alvan/vim-closetag" -- for html autoclosing tag
-
     use {
         "lukas-reineke/indent-blankline.nvim",
         event = "BufRead",
