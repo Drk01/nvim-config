@@ -31,7 +31,7 @@ return require('packer').startup(function()
     -- nvim-commment
     use {
         'terrortylor/nvim-comment',
-        config = function() require "others.comment" end
+        config = function() require("modules.others").comment() end
     }
     -- Vim.sorround
     use 'tpope/vim-surround'
@@ -40,7 +40,7 @@ return require('packer').startup(function()
     -- neoscroll
     use {
         'karb94/neoscroll.nvim',
-        config = function() require "others.neoscroll" end
+        config = function() require("modules.others").neoscroll() end
     }
     -- One Dark
     use 'joshdick/onedark.vim'
