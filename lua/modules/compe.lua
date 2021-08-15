@@ -1,7 +1,5 @@
 local present, compe = pcall(require, "compe")
-if not present then
-    return
-end
+if not present then return end
 
 compe.setup {
     enabled = true,
@@ -20,6 +18,6 @@ compe.setup {
         buffer = {kind = "﬘", true},
         luasnip = {kind = "﬌", true},
         nvim_lsp = true,
-        nvim_lua = true,
+        nvim_lua = true
     }
 }
