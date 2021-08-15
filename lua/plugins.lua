@@ -123,4 +123,10 @@ return require('packer').startup(function()
         config = function() require('gitsigns').setup() end
     }
 
+    use {
+        "norcalli/nvim-colorizer.lua",
+        event = "BufRead",
+        config = function() require("modules.others").colorizer() end
+    }
+
 end)
