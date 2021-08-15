@@ -33,8 +33,6 @@ return require('packer').startup(function()
         'terrortylor/nvim-comment',
         config = function() require "others.comment" end
     }
-    -- Vim colors
-    use 'ap/vim-css-color'
     -- Vim.sorround
     use 'tpope/vim-surround'
     -- Restore folding
