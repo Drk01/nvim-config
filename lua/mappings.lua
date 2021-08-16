@@ -68,7 +68,7 @@ vim.g.mapleader = "ñ"
 -- Telescope
 map("n", "<Leader>gs", [[<Cmd> Telescope git_status <CR>]], opt)
 map("n", "<Leader>gc", [[<Cmd> Telescope git_commits <CR>]], opt)
-map("n", "<C-p>", [[<Cmd> Telescope find_files <CR>]], opt)
+map("n", "<C-p>", [[<Cmd> Telescope git_files <CR>]], opt)
 map("n", "<Leader>fp",
     [[<Cmd>lua require('telescope').extensions.media_files.media_files()<CR>]],
     opt)
