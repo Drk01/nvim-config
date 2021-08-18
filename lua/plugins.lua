@@ -102,11 +102,10 @@ return require('packer').startup(function()
         setup = function() require("modules.others").blankline() end
     }
 
-    -- auto-pairs
+    -- Pear auto-pairs
     use {
-        "windwp/nvim-autopairs",
-        after = "nvim-compe",
-        config = function() require "modules.autopairs" end
+        "steelsojka/pears.nvim",
+        config = function() require("modules.autopairs") end
     }
     -- Lsp signature
     use {
