@@ -50,7 +50,8 @@ return require('packer').startup(function()
     use {
         'nvim-treesitter/nvim-treesitter',
         event = 'BufRead',
-        config = function() require 'modules.treesitter' end
+        config = function() require 'modules.treesitter' end,
+        run = ":TSUpdate"
     }
     -- Sidebar
     use 'kyazdani42/nvim-web-devicons'
@@ -77,7 +78,7 @@ return require('packer').startup(function()
     -- Code completion
     use {
         "hrsh7th/nvim-compe",
-        event = "InsertEnter",
+        -- event = "InsertEnter",
         config = function() require "modules.compe" end,
         wants = "LuaSnip",
         requires = {
