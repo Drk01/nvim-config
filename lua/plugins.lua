@@ -132,4 +132,8 @@ return require('packer').startup(function()
         config = function() require("modules.others").colorizer() end
     }
 
+    use {"windwp/nvim-ts-autotag", event = "InsertEnter"}
+
+    use {'folke/lsp-colors.nvim'}
+
 end)
