@@ -136,4 +136,6 @@ return require('packer').startup(function()
 
     use {'folke/lsp-colors.nvim'}
 
+    use {'jose-elias-alvarez/nvim-lsp-ts-utils'}
+
 end)
