@@ -19,7 +19,7 @@ vim.g.lightline = {
     component_function = {gitbranch = 'fugitive#head'}
 }
 -- Format on save
-vim.api.nvim_command("au BufWrite * :TSLspOrganizeSync")
+-- vim.api.nvim_command("au BufWrite * :TSLspOrganizeSync")
 vim.api.nvim_command("au BufWrite * :Neoformat")
 
 require 'mappings'
