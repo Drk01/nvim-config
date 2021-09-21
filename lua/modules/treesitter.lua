@@ -7,7 +7,11 @@ ts_config.setup {
         "json", "yaml", "comment", "jsonc", "tsx", "html", "json5", "jsdoc",
         "latex", "css"
     },
-    highlight = {enable = true, use_languagetree = true},
+    highlight = {
+        enable = true,
+        use_languagetree = true,
+        additional_vim_regex_highlighting = true
+    },
     autotag = {enable = true},
     autopairs = {enable = true}
 }
