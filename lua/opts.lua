@@ -16,12 +16,23 @@ set.signcolumn = 'yes'
 set.cmdheight = 1
 set.updatetime = 50
 -- set.shortmess = '+=c'
+vim.cmd [[ set shortmess+=c ]]
 set.colorcolumn = "80"
 set.laststatus = 2
 set.maxmempattern = 2000000
 set.viewoptions = 'cursor,folds,slash,unix'
-set.foldmethod = 'indent'
+-- set.foldmethod = 'indent'
+vim.cmd [[ set foldmethod=expr ]]
+vim.cmd [[ set foldexpr=nvim_treesitter#foldexpr() ]]
 set.termguicolors = true
+
+vim.cmd [[ set nohlsearch ]]
+vim.cmd [[ set noerrorbells ]]
+vim.cmd [[ set nowrap ]]
+vim.cmd [[ set noswapfile ]]
+vim.cmd [[ set nobackup ]]
+vim.cmd [[ set noshowmode ]]
+
 -- set.nohlsearch = true
 -- set.noerrorbells = true
 -- set.nowrap = true
