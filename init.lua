@@ -2,15 +2,14 @@ require 'plugins'
 
 -- Colorscheme
 vim.o.termguicolors = true
-vim.g.onedark_terminal_italics = 2
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme tokyonight]]
 vim.cmd [[highlight link CompeDocumentation NormalFloat]]
 
 vim.g.t_Co = 256
 
 -- Lightline
 vim.g.lightline = {
-    colorscheme = 'onedark',
+    colorscheme = 'tokyonight',
     active = {
         left = {
             {'mode', 'paste'}, {'gitbranch', 'readonly', 'filename', 'modified'}

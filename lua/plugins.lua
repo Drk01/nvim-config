@@ -42,8 +42,9 @@ return require('packer').startup(function()
         'karb94/neoscroll.nvim',
         config = function() require("modules.others").neoscroll() end
     }
-    -- One Dark
-    use 'joshdick/onedark.vim'
+    -- One Dark theme
+    -- use 'joshdick/onedark.vim'
+
     -- Formatter
     use 'sbdchd/neoformat'
     -- Treesitter
@@ -139,5 +140,8 @@ return require('packer').startup(function()
     use {'jose-elias-alvarez/nvim-lsp-ts-utils'}
 
     use {"puremourning/vimspector"}
+
+    -- Theme
+    use 'folke/tokyonight.nvim'
 
 end)
