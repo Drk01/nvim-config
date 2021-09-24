@@ -115,3 +115,6 @@ map("n", ".", ":TodoTelescope<CR>", opt)
 
 -- Symbols outline
 map("n", "<Leader>.", ":SymbolsOutline<CR>", opt)
+
+-- Trouble.nvim
+map("n", "<Leader>,", ":TroubleToggle<CR>", opt)
