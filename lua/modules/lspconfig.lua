@@ -59,7 +59,7 @@ local function on_attach(client, bufnr)
     ts_utils.setup {
         debug = false,
         disable_commands = false,
-        enable_import_on_completion = false,
+        enable_import_on_completion = true,
 
         -- import all
         import_all_timeout = 5000, -- ms
@@ -86,7 +86,7 @@ local function on_attach(client, bufnr)
         formatter_config_fallback = nil,
 
         -- update imports on file move
-        update_imports_on_move = false,
+        update_imports_on_move = true,
         require_confirmation_on_move = false,
         watch_dir = nil,
 
