@@ -112,3 +112,6 @@ map("n", ";", ":NvimTreeToggle<CR>", opt)
 
 -- Todo
 map("n", ".", ":TodoTelescope<CR>", opt)
+
+-- Symbols outline
+map("n", "<Leader>.", ":SymbolsOutline<CR>", opt)

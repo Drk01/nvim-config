@@ -144,4 +144,7 @@ return require('packer').startup(function()
     -- Theme
     use 'folke/tokyonight.nvim'
 
+    -- symbols-outline.nvim
+    use 'simrat39/symbols-outline.nvim'
+
 end)
