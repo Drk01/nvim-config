@@ -118,3 +118,6 @@ map("n", "<Leader>.", ":SymbolsOutline<CR>", opt)
 
 -- Trouble.nvim
 map("n", "<Leader>,", ":TroubleToggle<CR>", opt)
+
+-- Omnifunction
+map("i", "<C-Space>", "<C-x><C-o>")
