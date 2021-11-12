@@ -2,14 +2,14 @@ require 'plugins'
 
 -- Colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme vscode]]
+vim.cmd [[ let g:vscode_style = "dark" ]]
 vim.cmd [[highlight link CompeDocumentation NormalFloat]]
 
 vim.g.t_Co = 256
 
 -- Lightline
 vim.g.lightline = {
-    colorscheme = 'tokyonight',
     active = {
         left = {
             {'mode', 'paste'}, {'gitbranch', 'readonly', 'filename', 'modified'}

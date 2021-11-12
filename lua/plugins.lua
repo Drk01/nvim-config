@@ -142,7 +142,8 @@ return require('packer').startup(function()
     use {"puremourning/vimspector"}
 
     -- Theme
-    use 'folke/tokyonight.nvim'
+    -- use 'folke/tokyonight.nvim'
+    use 'Mofiqul/vscode.nvim'
 
     -- symbols-outline.nvim
     use 'simrat39/symbols-outline.nvim'
