@@ -17,7 +17,6 @@ vim.g.lightline = {
     component_function = {gitbranch = 'fugitive#head'}
 }
 -- Format on save: Only works with Typescript 
-vim.api.nvim_command("au BufWrite * :TSLspOrganizeSync")
 vim.api.nvim_command("au BufWrite * :Neoformat")
 
 -- Vimspector
