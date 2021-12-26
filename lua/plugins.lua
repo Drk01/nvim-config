@@ -43,7 +43,7 @@ return require('packer').startup(function()
         config = function() require("modules.others").neoscroll() end
     }
     -- One Dark theme
-    -- use 'joshdick/onedark.vim'
+    use 'joshdick/onedark.vim'
 
     -- Formatter
     use 'sbdchd/neoformat'
