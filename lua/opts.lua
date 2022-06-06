@@ -22,8 +22,8 @@ set.laststatus = 2
 set.maxmempattern = 2000000
 set.viewoptions = 'cursor,folds,slash,unix'
 -- set.foldmethod = 'indent'
-vim.cmd [[ set foldmethod=expr ]]
-vim.cmd [[ set foldexpr=nvim_treesitter#foldexpr() ]]
+-- vim.cmd [[ set foldmethod=expr ]]
+-- vim.cmd [[ set foldexpr=nvim_treesitter#foldexpr() ]]
 set.termguicolors = true
 
 vim.cmd [[ set nohlsearch ]]
