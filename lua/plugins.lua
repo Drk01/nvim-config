@@ -29,8 +29,6 @@ return require("packer").startup(
         }
         -- Vim Fugitive
         use "https://github.com/tpope/vim-fugitive"
-        --  Lightline
-        use "itchyny/lightline.vim"
         -- Tmux-Vim
         use "christoomey/vim-tmux-navigator"
         -- Better comments
