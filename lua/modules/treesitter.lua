@@ -5,7 +5,7 @@ ts_config.setup {
     ensure_installed = {
         "bash", "lua", "typescript", "graphql", "vue", "dockerfile",
         "json", "yaml", "comment", "jsonc", "tsx", "html", "json5", "jsdoc",
-        "latex", "css"
+        "latex", "css", "dart"
     },
     highlight = {
         enable = true,
