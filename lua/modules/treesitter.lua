@@ -3,7 +3,7 @@ if not present then return end
 
 ts_config.setup {
     ensure_installed = {
-        "bash", "lua", "php", "typescript", "graphql", "vue", "dockerfile",
+        "bash", "lua", "typescript", "graphql", "vue", "dockerfile",
         "json", "yaml", "comment", "jsonc", "tsx", "html", "json5", "jsdoc",
         "latex", "css"
     },
