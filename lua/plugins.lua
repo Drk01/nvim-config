@@ -156,8 +156,6 @@ return require("packer").startup(
 
         use {"folke/lsp-colors.nvim"}
 
-        use {"jose-elias-alvarez/nvim-lsp-ts-utils"}
-
         use {"puremourning/vimspector"}
 
         -- symbols-outline.nvim
