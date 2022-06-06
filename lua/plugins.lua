@@ -106,7 +106,7 @@ return require("packer").startup(
         use {
             "hrsh7th/nvim-cmp",
             config = function()
-                require("modules.cpm")
+                require("modules.cmp")
             end
         }
         use "L3MON4D3/LuaSnip"
