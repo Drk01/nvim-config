@@ -83,14 +83,6 @@ return require("packer").startup(
         use {"kabouzeid/nvim-lspinstall", event = "BufRead"}
 
         use {
-            "neovim/nvim-lspconfig",
-            after = "nvim-lspinstall",
-            config = function()
-                require "modules.lspconfig"
-            end
-        }
-
-        use {
             "onsails/lspkind-nvim",
             event = "BufRead",
             config = function()
