@@ -74,8 +74,9 @@ return require("packer").startup(
                 require "modules.nvimtree"
             end,
             setup = function()
-                vim.api.nvim_set_keymap("n", ";", ":NvimTreeToggle<CR>", {})
-            end
+                vim.api.nvim_set_keymap("n", ";", ":NvimTreeFocus<CR>", {})
+            end,
+            after = "nvim-web-devicons",
         }
 
         use {"kabouzeid/nvim-lspinstall", event = "BufRead"}
@@ -155,8 +156,6 @@ return require("packer").startup(
         use {"windwp/nvim-ts-autotag", event = "InsertEnter"}
 
         use {"folke/lsp-colors.nvim"}
-
-        use {"puremourning/vimspector"}
 
         -- symbols-outline.nvim
         use "simrat39/symbols-outline.nvim"
