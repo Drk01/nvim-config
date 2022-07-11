@@ -70,13 +70,16 @@ return require("packer").startup(
         use {
             "kyazdani42/nvim-tree.lua",
             cmd = "NvimTreeToggle",
+            requires = {
+                'kyazdani42/nvim-web-devicons', -- optional, for file icons
+            },
             config = function()
                 require "modules.nvimtree"
             end,
             setup = function()
-                vim.api.nvim_set_keymap("n", ";", ":NvimTreeFocus<CR>", {})
+                vim.api.nvim_set_keymap("n", ";", ":NvimTreeToggle<CR>", {})
             end,
-            after = "nvim-web-devicons",
+            tag = "nightly"
         }
 
         use {"kabouzeid/nvim-lspinstall", event = "BufRead"}
