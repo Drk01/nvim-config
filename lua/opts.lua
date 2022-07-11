@@ -1,6 +1,6 @@
 local set = vim.opt
 
-set.encoding = 'UTF-8'
+set.encoding = 'utf-8'
 set.nu = true
 set.relativenumber = true
 set.shiftwidth = 4
