@@ -71,7 +71,7 @@ return require("packer").startup(
             "kyazdani42/nvim-tree.lua",
             cmd = "NvimTreeToggle",
             requires = {
-                'kyazdani42/nvim-web-devicons', -- optional, for file icons
+                "kyazdani42/nvim-web-devicons" -- optional, for file icons
             },
             config = function()
                 require "modules.nvimtree"
