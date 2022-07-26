@@ -2,7 +2,7 @@ require "plugins"
 
 -- Colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme ayu]]
 vim.cmd [[highlight link CompeDocumentation NormalFloat]]
 
 vim.g.t_Co = 256

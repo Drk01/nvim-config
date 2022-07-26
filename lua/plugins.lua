@@ -51,8 +51,14 @@ return require("packer").startup(
                 require("modules.others").neoscroll()
             end
         }
-        -- One Dark theme
-        use "joshdick/onedark.vim"
+
+        -- Ayu theme
+        use {
+            "Shatur/neovim-ayu",
+            config = function()
+                require("modules.ayu_theme")
+            end
+        }
 
         -- Formatter
         use "sbdchd/neoformat"
