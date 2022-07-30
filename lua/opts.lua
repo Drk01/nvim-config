@@ -1,6 +1,6 @@
 local set = vim.opt
 
-set.encoding = 'utf-8'
+set.encoding = "utf-8"
 set.nu = true
 set.relativenumber = true
 set.shiftwidth = 4
@@ -11,8 +11,8 @@ set.smartcase = true
 vim.cmd [[ set undodir="~/.config/nvim/undodir" ]]
 set.undofile = true
 set.incsearch = true
-set.completeopt = 'menuone,noselect'
-set.signcolumn = 'yes'
+set.completeopt = "menuone,noselect"
+set.signcolumn = "yes"
 set.cmdheight = 1
 set.updatetime = 50
 -- set.shortmess = '+=c'
@@ -20,7 +20,7 @@ vim.cmd [[ set shortmess+=c ]]
 set.colorcolumn = "80"
 set.laststatus = 2
 set.maxmempattern = 2000000
-set.viewoptions = 'cursor,folds,slash,unix'
+set.viewoptions = "cursor,folds,slash,unix"
 -- set.foldmethod = 'indent'
 -- vim.cmd [[ set foldmethod=expr ]]
 -- vim.cmd [[ set foldexpr=nvim_treesitter#foldexpr() ]]
