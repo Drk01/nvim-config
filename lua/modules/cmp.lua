@@ -22,7 +22,27 @@ cmp.setup(
                     c = cmp.mapping.close()
                 }
             ),
-            ["<CR>"] = cmp.mapping.confirm({select = true}) -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+            ["<CR>"] = cmp.mapping.confirm({select = true}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+            ["<C-n>"] = cmp.mapping(
+                function(fallback)
+                    if cmp.visible() then
+                        cmp.select_next_item()
+                    elseif has_words_before() then
+                        cmp.complete()
+                    else
+                        fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+                    end
+                end,
+                {"i", "s"}
+            ),
+            ["<C-p>"] = cmp.mapping(
+                function()
+                    if cmp.visible() then
+                        cmp.select_prev_item()
+                    end
+                end,
+                {"i", "s"}
+            )
         },
         sources = cmp.config.sources(
             {
