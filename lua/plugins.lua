@@ -88,8 +88,6 @@ return require("packer").startup(
             tag = "nightly"
         }
 
-        use {"kabouzeid/nvim-lspinstall", event = "BufRead"}
-
         use {
             "onsails/lspkind-nvim",
             event = "BufRead",
