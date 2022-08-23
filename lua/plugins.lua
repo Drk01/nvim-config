@@ -88,6 +88,14 @@ return require("packer").startup(
             tag = "nightly"
         }
 
+        use "neovim/nvim-lspconfig"
+
+        use {
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            "WhoIsSethDaniel/mason-tool-installer.nvim"
+        }
+
         use {
             "onsails/lspkind-nvim",
             event = "BufRead",
@@ -96,7 +104,6 @@ return require("packer").startup(
             end
         }
 
-        use "neovim/nvim-lspconfig"
         use "hrsh7th/cmp-nvim-lsp"
         use "hrsh7th/cmp-buffer"
         use "hrsh7th/cmp-path"
