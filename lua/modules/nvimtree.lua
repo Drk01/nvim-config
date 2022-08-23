@@ -1,14 +1,13 @@
 require("nvim-tree").setup {
     update_cwd = true,
-    auto_open = false,
     hijack_netrw = false,
-    disable_netrw = true,
-    tab_open = false,
-    follow = true
+    disable_netrw = true
 }
 
 local present, tree_c = pcall(require, "nvim-tree.config")
-if not present then return end
+if not present then
+    return
+end
 local tree_cb = tree_c.nvim_tree_callback
 local g = vim.g
 
@@ -81,15 +80,20 @@ g.nvim_tree_mappings = {
     {key = "J", cb = tree_cb("last_sibling")},
     {key = "I", cb = tree_cb("toggle_ignored")},
     {key = "H", cb = tree_cb("toggle_dotfiles")},
-    {key = "R", cb = tree_cb("refresh")}, {key = "a", cb = tree_cb("create")},
-    {key = "d", cb = tree_cb("remove")}, {key = "r", cb = tree_cb("rename")},
+    {key = "R", cb = tree_cb("refresh")},
+    {key = "a", cb = tree_cb("create")},
+    {key = "d", cb = tree_cb("remove")},
+    {key = "r", cb = tree_cb("rename")},
     {key = "<C->", cb = tree_cb("full_rename")},
-    {key = "x", cb = tree_cb("cut")}, {key = "c", cb = tree_cb("copy")},
-    {key = "p", cb = tree_cb("paste")}, {key = "y", cb = tree_cb("copy_name")},
+    {key = "x", cb = tree_cb("cut")},
+    {key = "c", cb = tree_cb("copy")},
+    {key = "p", cb = tree_cb("paste")},
+    {key = "y", cb = tree_cb("copy_name")},
     {key = "Y", cb = tree_cb("copy_path")},
     {key = "gy", cb = tree_cb("copy_absolute_path")},
     {key = "[c", cb = tree_cb("prev_git_item")},
     {key = "}c", cb = tree_cb("next_git_item")},
-    {key = "-", cb = tree_cb("dir_up")}, {key = "q", cb = tree_cb("close")},
+    {key = "-", cb = tree_cb("dir_up")},
+    {key = "q", cb = tree_cb("close")},
     {key = "g?", cb = tree_cb("toggle_help")}
 }
