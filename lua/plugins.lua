@@ -91,17 +91,17 @@ return require("packer").startup(
         use "neovim/nvim-lspconfig"
 
         use {
-            "williamboman/mason.nvim",
-            "williamboman/mason-lspconfig.nvim",
-            "WhoIsSethDaniel/mason-tool-installer.nvim"
+            "onsails/lspkind-nvim"
+            -- event = "BufRead"
+            -- config = function()
+            --     require("modules.others").lspkind()
+            -- end
         }
 
         use {
-            "onsails/lspkind-nvim",
-            event = "BufRead",
-            config = function()
-                require("modules.others").lspkind()
-            end
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            "WhoIsSethDaniel/mason-tool-installer.nvim"
         }
 
         use "hrsh7th/cmp-nvim-lsp"
@@ -114,6 +114,7 @@ return require("packer").startup(
                 require("modules.cmp")
             end
         }
+        use {"tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp"}
         use "L3MON4D3/LuaSnip"
         use "saadparwaiz1/cmp_luasnip"
 
