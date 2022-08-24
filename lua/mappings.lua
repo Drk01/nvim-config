@@ -37,7 +37,7 @@ map("n", "<Leader>gp", ":G push<CR>", opt)
 map("v", "<Leader>sh", ":Gitsigns stage_hunk<CR>", opt)
 
 -- Tabs switch
--- map("n", "<Tab>", ":tabn<CR>", opt)
+map("n", "<Tab>", ":tabn<CR>", opt)
 map("n", "<S-Tab>", ":tabprevious<CR>", opt)
 
 -- Navigation
