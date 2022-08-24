@@ -10,15 +10,25 @@ end
 
 M.comment = function()
     local present, nvim_comment = pcall(require, "nvim_comment")
-    if present then nvim_comment.setup() end
+    if present then
+        nvim_comment.setup()
+    end
 end
 
 M.lspkind = function()
     local present, lspkind = pcall(require, "lspkind")
-    if present then lspkind.init() end
+    if present then
+        lspkind.init()
+    end
 end
 
-M.neoscroll = function() pcall(function() require("neoscroll").setup() end) end
+M.neoscroll = function()
+    pcall(
+        function()
+            require("neoscroll").setup()
+        end
+    )
+end
 
 M.blankline = function()
     vim.g.indentLine_enabled = 1
@@ -32,4 +42,3 @@ M.blankline = function()
 end
 
 return M
-
