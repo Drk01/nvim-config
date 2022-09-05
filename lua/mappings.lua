@@ -13,7 +13,7 @@ vim.api.nvim_set_keymap("i", "jj", "<esc>", {})
 vim.api.nvim_set_keymap("t", "jj", "<esc>", {})
 
 -- Leader
-vim.g.mapleader = "ñ"
+vim.g.mapleader = " "
 -- Telescope
 map("n", "<Leader>gs", [[<Cmd> Telescope git_status <CR>]], opt)
 map("n", "<Leader>gc", [[<Cmd> Telescope git_commits <CR>]], opt)
