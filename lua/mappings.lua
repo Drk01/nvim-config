@@ -48,8 +48,8 @@ map("n", "j", "jzz", opt)
 map("n", ":sw", "<C-w><C-x>", opt)
 
 -- Formatter
-map("n", "<Leader>ñ", ":Neoformat<CR>", opt)
-map("v", "<Leader>ñ", ":Neoformat<CR>", opt)
+map("n", "<Leader><Leader>", ":Neoformat<CR>", opt)
+map("v", "<Leader><Leader>", ":Neoformat<CR>", opt)
 
 -- Terminal
 map("n", "<Leader>t", ":split term://bash<CR>", opt)
