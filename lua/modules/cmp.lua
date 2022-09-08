@@ -55,6 +55,9 @@ cmp.setup(
             },
             {
                 {name = "cmp_tabnine"}
+            },
+            {
+                {name = "fuzzy_path"}
             }
         ),
         formatting = {
@@ -98,7 +101,10 @@ cmp.setup.cmdline(
     "/",
     {
         sources = {
-            {name = "buffer"}
+            {name = "buffer"},
+            {
+                {name = "fuzzy_path"}
+            }
         }
     }
 )
@@ -113,6 +119,9 @@ cmp.setup.cmdline(
             },
             {
                 {name = "cmdline"}
+            },
+            {
+                {name = "fuzzy_path"}
             }
         )
     }

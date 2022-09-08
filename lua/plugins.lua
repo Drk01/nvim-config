@@ -196,5 +196,10 @@ return require("packer").startup(
                 require "octo".setup()
             end
         }
+
+        -- Autocomplete paths
+
+        use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
+        use {"tzachar/cmp-fuzzy-path", requires = {"hrsh7th/nvim-cmp", "tzachar/fuzzy.nvim"}}
     end
 )
