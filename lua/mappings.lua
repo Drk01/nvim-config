@@ -65,3 +65,6 @@ map("n", "<Leader>,", ":TroubleToggle<CR>", opt)
 
 -- Omnifunction
 map("i", "<C-Space>", "<C-x><C-o>")
+
+-- Github
+map("n", "<Leader>gh", ":Octo actions<CR>", opt)
