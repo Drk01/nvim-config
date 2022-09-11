@@ -116,7 +116,14 @@ return require("packer").startup(
                 require("modules.cmp")
             end
         }
-        use {"tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp"}
+        use {
+            "tzachar/cmp-tabnine",
+            run = "./install.sh",
+            requires = "hrsh7th/nvim-cmp",
+            config = function()
+                require("modules.tabnine")
+            end
+        }
         use "L3MON4D3/LuaSnip"
         use "saadparwaiz1/cmp_luasnip"
 
@@ -200,8 +207,8 @@ return require("packer").startup(
         }
 
         -- Autocomplete paths
-
         use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
+        use {"tzachar/fuzzy.nvim", requires = {"nvim-telescope/telescope-fzf-native.nvim"}}
         use {"tzachar/cmp-fuzzy-path", requires = {"hrsh7th/nvim-cmp", "tzachar/fuzzy.nvim"}}
     end
 )
