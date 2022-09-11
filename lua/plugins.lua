@@ -19,6 +19,16 @@ return require("packer").startup(
     function()
         -- Packer
         use {"wbthomason/packer.nvim", event = "VimEnter"}
+
+        -- Theme
+        use {
+            "catppuccin/nvim",
+            as = "catppuccin",
+            config = function()
+                require("modules.theme")
+            end
+        }
+
         -- Telescope
         use {
             "nvim-telescope/telescope.nvim",
@@ -49,14 +59,6 @@ return require("packer").startup(
             "karb94/neoscroll.nvim",
             config = function()
                 require("modules.others").neoscroll()
-            end
-        }
-
-        -- Ayu theme
-        use {
-            "Shatur/neovim-ayu",
-            config = function()
-                require("modules.ayu_theme")
             end
         }
 

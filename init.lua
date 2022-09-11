@@ -5,7 +5,6 @@ require("mason-lspconfig").setup()
 
 -- Colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme ayu]]
 vim.cmd [[highlight link CompeDocumentation NormalFloat]]
 vim.cmd [[set foldmethod=expr]]
 vim.cmd [[set foldexpr=nvim_treesitter#foldexpr()]]
