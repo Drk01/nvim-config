@@ -51,9 +51,6 @@ map("n", ":sw", "<C-w><C-x>", opt)
 map("n", "<Leader><Leader>", ":Neoformat<CR>", opt)
 map("v", "<Leader><Leader>", ":Neoformat<CR>", opt)
 
--- Terminal
-map("n", "<Leader>t", ":split term://bash<CR>", opt)
-
 -- NvimTree
 map("n", ";", ":NvimTreeToggle<CR>", opt)
 
