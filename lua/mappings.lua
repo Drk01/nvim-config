@@ -31,7 +31,8 @@ map("v", "++", ":CommentToggle<CR>", opt)
 map("i", "<Tab>", "<c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>", opt)
 
 -- Git
-map("n", ",", ":Git<CR>", opt)
+map("n", "<Leader>,", ":Git<CR>", opt)
+map("n", "<Leader><Leader>,", ":DiffviewOpen<CR>", opt)
 map("n", "<Leader>df", ":vertical Gdiffsplit<CR>", opt)
 map("n", "<Leader>gp", ":G push<CR>", opt)
 map("v", "<Leader>sh", ":Gitsigns stage_hunk<CR>", opt)
@@ -52,16 +53,19 @@ map("n", "<Leader><Leader>", ":Neoformat<CR>", opt)
 map("v", "<Leader><Leader>", ":Neoformat<CR>", opt)
 
 -- NvimTree
-map("n", ";", ":NvimTreeToggle<CR>", opt)
+map("n", "<Leader>n", ":NvimTreeToggle<CR>", opt)
 
 -- Symbols outline
-map("n", "<Leader>.", ":SymbolsOutline<CR>", opt)
+map("n", "<Leader>so", ":SymbolsOutline<CR>", opt)
 
 -- Trouble.nvim
-map("n", "<Leader>,", ":TroubleToggle<CR>", opt)
+map("n", "<Leader>t", ":TroubleToggle<CR>", opt)
 
 -- Omnifunction
-map("i", "<C-Space>", "<C-x><C-o>")
+map("i", "<C-Leader>", "<C-x><C-o>")
 
 -- Github
 map("n", "<Leader>gh", ":Octo actions<CR>", opt)
+
+--Rename
+map("n", "<Leader>r", ":IncRename ", opt)

@@ -210,5 +210,16 @@ return require("packer").startup(
         use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
         use {"tzachar/fuzzy.nvim", requires = {"nvim-telescope/telescope-fzf-native.nvim"}}
         use {"tzachar/cmp-fuzzy-path", requires = {"hrsh7th/nvim-cmp", "tzachar/fuzzy.nvim"}}
+
+        -- Rename
+        use {
+            "smjonas/inc-rename.nvim",
+            config = function()
+                require("inc_rename").setup()
+            end
+        }
+
+        -- Diffview
+        use {"sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim"}
     end
 )
