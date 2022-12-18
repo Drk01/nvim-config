@@ -1,71 +1,54 @@
-local function map(mode, lhs, rhs, opts)
-    local options = {noremap = true, silent = true}
-    if opts then
-        options = vim.tbl_extend("force", options, opts)
-    end
-    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
-
-local opt = {}
-
 -- escape with 'jj' mapping
-vim.api.nvim_set_keymap("i", "jj", "<esc>", {})
-vim.api.nvim_set_keymap("t", "jj", "<esc>", {})
+vim.keymap.set("i", "jj", "<esc>", {})
+vim.keymap.set("t", "jj", "<esc>", {})
 
 -- Leader
 vim.g.mapleader = " "
 -- Telescope
-map("n", "<Leader>gs", [[<Cmd> Telescope git_status <CR>]], opt)
-map("n", "<Leader>gc", [[<Cmd> Telescope git_commits <CR>]], opt)
-map("n", "<C-p>", [[<Cmd> Telescope find_files <CR>]], opt)
-map("n", "<Leader>fp", [[<Cmd>lua require('telescope').extensions.media_files.media_files()<CR>]], opt)
-map("n", "<Leader>fb", [[<Cmd>Telescope buffers<CR>]], opt)
-map("n", "<Leader>fh", [[<Cmd>Telescope help_tags<CR>]], opt)
-map("n", "<Leader>fo", [[<Cmd>Telescope oldfiles<CR>]], opt)
+vim.keymap.set("n", "<Leader>gs", [[<Cmd> Telescope git_status <CR>]], {})
+vim.keymap.set("n", "<Leader>gc", [[<Cmd> Telescope git_commits <CR>]], {})
+vim.keymap.set("n", "<C-p>", [[<Cmd> Telescope find_files <CR>]], {})
+vim.keymap.set("n", "<Leader>fp", [[<Cmd>lua require('telescope').extensions.media_files.media_files()<CR>]], {})
+vim.keymap.set("n", "<Leader>fb", [[<Cmd>Telescope buffers<CR>]], {})
+vim.keymap.set("n", "<Leader>fh", [[<Cmd>Telescope help_tags<CR>]], {})
+vim.keymap.set("n", "<Leader>fo", [[<Cmd>Telescope oldfiles<CR>]], {})
 
 -- CommentToggle
-map("n", "++", ":CommentToggle<CR>", opt)
-map("v", "++", ":CommentToggle<CR>", opt)
+vim.keymap.set("n", "++", ":CommentToggle<CR>", {})
+vim.keymap.set("v", "++", ":CommentToggle<CR>", {})
 
 -- Tabs
-map("i", "<Tab>", "<c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>", opt)
+vim.keymap.set("i", "<Tab>", "<c-o>:call search('\\|)\\|]\\|>\\}', 'cW')<cr><Right>", {})
 
 -- Git
-map("n", "<Leader>,", ":Git<CR>", opt)
-map("n", "<Leader><Leader>,", ":DiffviewOpen<CR>", opt)
-map("n", "<Leader>df", ":vertical Gdiffsplit<CR>", opt)
-map("n", "<Leader>gp", ":G push<CR>", opt)
-map("v", "<Leader>sh", ":Gitsigns stage_hunk<CR>", opt)
+vim.keymap.set("n", "<Leader>,", ":Git<CR>", {})
+vim.keymap.set("n", "<Leader><Leader>,", ":DiffviewOpen<CR>", {})
+vim.keymap.set("n", "<Leader>df", ":vertical Gdiffsplit<CR>", {})
+vim.keymap.set("n", "<Leader>gp", ":G push<CR>", {})
+vim.keymap.set("v", "<Leader>sh", ":Gitsigns stage_hunk<CR>", {})
 
 -- Tabs switch
-map("n", "<Tab>", ":tabn<CR>", opt)
-map("n", "<S-Tab>", ":tabprevious<CR>", opt)
+vim.keymap.set("n", "<Tab>", ":tabn<CR>", {})
+vim.keymap.set("n", "<S-Tab>", ":tabprevious<CR>", {})
 
 -- Navigation
-map("n", "k", "kzz", opt)
-map("n", "j", "jzz", opt)
+vim.keymap.set("n", "k", "kzz", {})
+vim.keymap.set("n", "j", "jzz", {})
 
 -- Window panes
-map("n", ":sw", "<C-w><C-x>", opt)
-
--- Formatter
-map("n", "<Leader><Leader>", ":Neoformat<CR>", opt)
-map("v", "<Leader><Leader>", ":Neoformat<CR>", opt)
+vim.keymap.set("n", ":sw", "<C-w><C-x>", {})
 
 -- NvimTree
-map("n", "<Leader>n", ":NvimTreeToggle<CR>", opt)
+vim.keymap.set("n", "<Leader>n", ":NvimTreeToggle<CR>", {})
 
 -- Symbols outline
-map("n", "<Leader>so", ":SymbolsOutline<CR>", opt)
+vim.keymap.set("n", "<Leader>so", ":SymbolsOutline<CR>", {})
 
 -- Trouble.nvim
-map("n", "<Leader>t", ":TroubleToggle<CR>", opt)
-
--- Omnifunction
-map("i", "<C-Leader>", "<C-x><C-o>")
+vim.keymap.set("n", "<Leader>t", ":TroubleToggle<CR>", {})
 
 -- Github
-map("n", "<Leader>gh", ":Octo actions<CR>", opt)
+vim.keymap.set("n", "<Leader>gh", ":Octo actions<CR>", {})
 
 --Rename
-map("n", "<Leader>r", ":IncRename ", opt)
+vim.keymap.set("n", "<Leader>r", ":IncRename ", {})
